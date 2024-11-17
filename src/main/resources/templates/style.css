@@ -1,0 +1,163 @@
+
+/*------------- Student Management Style -------------*/
+/*------------- All Element -------------*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: rgba(150, 148, 255, 1);
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        padding: 5px;
+    }
+    button{
+        font-size: 10px;
+        padding: 10px;
+        border: none;
+        font-size: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        margin: 4px;
+        color: rgba(255, 255, 255, 1);
+    }
+    button:hover{
+        opacity: 0.75;
+    }
+}
+/*------------- Main Content Style -------------*/
+body {
+    overflow-x: hidden;
+    background-color: rgba(235, 234, 255, 1);
+    header{
+        nav{
+            padding: 10px;
+            height: 15vh;
+            width: 98vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                cursor: default;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+                li{
+                    padding-right: 10px;
+                    list-style: none;
+                    border-radius: 2px;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                }
+                li:hover{
+                    background-color: rgba(255, 255, 255, 1);
+                }
+            }
+            div{
+                button{
+                    background-color: rgba(61, 59, 243, 1);
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+    main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            form{
+                background-color: rgba(246, 247, 196, 1);
+                padding: 20px 10px;
+                box-shadow: inset -5px -5px 12px rgba(246, 247, 196, 1),
+                    5px 5px 12px rgba(0, 0, 0, 0.161);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                h1{
+                    font-size: 30px;
+                    padding: 4px;
+                }
+                input{
+                    font-size: 20px;
+                    margin: 4px;
+                    border: none;
+                    border: 4px;
+                    box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 1),
+                    5px 5px 12px rgba(0, 0, 0, 0.161);
+                    padding: 2px 5px;
+                }
+                input:focus{
+                    outline: none;
+                }
+                div{
+                    grid-column: span 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        padding: 10px 20px;
+                        border-radius: 2px;
+                        background-color: rgba(71, 102, 59, 1);
+                    }
+                }
+            }
+        }
+        table{
+            display: none;
+            background-color: rgba(236, 240, 243, 1);
+            box-shadow: inset -5px -5px 12px rgba(255, 255, 255, 1),
+                    5px 5px 12px rgba(0,0,0,.16);
+            border-radius: 2px;
+            tr{
+                th{
+                    padding: 10px;
+                }
+                td{
+                    padding: 10px;
+                    .button01{
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                        background-color: rgba(254, 236, 55, 1);
+                        border: 1px solid transparent;
+                    }
+                    .button01:hover{
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                        border: 1px solid rgba(254, 236, 55, 1);
+                        color: rgba(0, 0, 0, 1);
+                        background-color: rgba(236, 240, 243, 1);
+                    }
+                    .button02{
+                        border: 1px solid transparent;
+                        border-radius: 10px;
+                        background-color: rgba(192, 8, 8, 1);
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    .button02:hover{
+                        border: 1px solid rgba(192, 8, 8, 1);
+                        border-radius: 10px;
+                        color: rgba(255, 255, 255, 1);
+                        background-color: rgba(236, 240, 243, 1);
+                        color: rgba(0, 0, 0, 1);
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 10px;
+        padding-left: 20px;
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+}
+

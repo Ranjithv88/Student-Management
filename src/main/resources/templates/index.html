@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentManagement</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Student Management</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Department</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div>
+                <button>Log In</button>
+                <button>Log Out</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <form class=".form" onsubmit="logInOnClick(e)">
+                <h1>Email :</h1><input type="email">
+                <h1>password :</h1><input type="password">
+                <div><button type="submit">Log In</button></div>
+            </form>
+        </div>
+        <table>
+            <tr>
+                <th>Roll.No</th><th>Name</th><th>Age</th><th>Department</th><th>PhoneNumber</th>
+            </tr>
+            <tr>
+                <td>01</td><td>RanjithKumar</td><td>20</td><td>BCA</td><td>8778455300</td><td><button class="button01" type="button">Edit</button><button class="button02" type="button">Delete</button></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <h1>About</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    </footer>
+</body>
+<script>
+    window.onload = function() {
+        const logIn = document.querySelector(".form")
+        const logInOnClick = (e) => {
+            e.preventDefault()
+            const formFields = logIn.elements
+            console.log(formFields[1])
+        }
+    }
+</script>
+</html>
+
